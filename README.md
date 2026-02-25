@@ -1,4 +1,4 @@
-# Ecommerce Growth Intelligence Dashboard
+# E-commerce Growth Intelligence Dashboard
 **End-to-End E-commerce Analytics Solution using BigQuery & Power BI**
 
 ## Project Overview
