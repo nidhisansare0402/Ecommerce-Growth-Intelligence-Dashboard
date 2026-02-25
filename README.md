@@ -22,13 +22,11 @@ Source: Google Analytics Public Dataset
 Dataset Used: `bigquery-public-data.google_analytics_sample.ga_sessions_201608*`  
 Period: August 2016  
 
-Key Characteristics:
+## Key Characteristics:
 - 74K+ sessions
 - 30K+ transactions
 - Nested hit-level event structure
 - Partitioned wildcard tables
-
----
 
 ## Tools & Technologies
 
@@ -57,11 +55,7 @@ Steps performed:
 
 Model Type: Star Schema (Fact + Dimensions)
 
----
-
 # Dashboard Structure (4 Pages)
-
----
 
 ## Page 1 – Executive Overview
 
@@ -82,8 +76,6 @@ Visuals:
 
 <img width="1432" height="812" alt="image" src="https://github.com/user-attachments/assets/98607480-133f-4d93-ae82-b1997c0a8952" />
 
----
-
 ## Page 2 – Marketing & Funnel Performance
 
 **Objective:** Evaluate channel efficiency
@@ -102,8 +94,6 @@ Visuals:
 
 <img width="1439" height="804" alt="image" src="https://github.com/user-attachments/assets/27e2b671-286a-4ba6-b11c-70e884a3ada0" />
 
----
-
 ## Page 3 – Sales & Customer Insights
 
 **Objective:** Analyze customer behavior
@@ -120,8 +110,6 @@ Visuals:
 - Revenue Trend
 
 <img width="1439" height="799" alt="image" src="https://github.com/user-attachments/assets/f162122b-f392-4cba-84da-05459a2c274a" />
-
----
 
 ## Page 4 – Product Performance Analysis
 
@@ -142,8 +130,6 @@ Visuals:
 - Revenue Share Distribution (Top 10)
 
 <img width="1432" height="798" alt="image" src="https://github.com/user-attachments/assets/0cf03301-ed26-4354-bdeb-ac93aa9e4b3d" />
-
----
 
 # Challenges Faced
 1️. Wildcard Partition Duplication
@@ -166,8 +152,6 @@ Large numeric identifiers were converted to scientific notation during CSV expor
 Add-to-cart values initially appeared as zero.
 ✔ Rebuilt funnel logic using proper event flags and session-level aggregation.
 
----
-
 ## Key KPIs Developed
 - Total Revenue
 - Total Orders
@@ -179,8 +163,6 @@ Add-to-cart values initially appeared as zero.
 - Revenue by Category
 - Top Product Contribution
 All KPIs were built using DAX with null-safe logic.
-
----
 
 ## Key Business Insights
 - ~63% of revenue driven by returning customers, highlighting strong retention.
